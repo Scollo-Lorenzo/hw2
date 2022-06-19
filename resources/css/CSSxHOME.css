@@ -1,0 +1,386 @@
+body{
+
+  font-family: 'Bebas Neue';
+  background-color: rgba(102, 102, 102, 0.6);
+  background-image: url(https://browsecat.net/sites/default/files/cool-sneakers-wallpapers-96990-982380-7826449.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#cerca {
+	margin-left: 35%;
+	margin-right: 35%;	
+}
+
+.hidden{
+
+  display: none;
+
+}
+
+#gif img{
+
+  display: flex;
+  align-items: center;
+
+  width: 50%;
+  height: 50%;
+  
+  border-radius: 3px;
+
+}
+
+#vista{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.1);
+    /*padding: 20px;*/
+}
+
+#vista img {
+  display: flex;
+
+  box-sizing: content-box;
+  width: 40%;
+
+  padding: 10px;
+}
+
+.sezione_fav_shop{
+
+  display: flex;
+
+}
+
+.icone{
+
+  display: flex;
+  flex-direction: row;
+  width: 20px;
+  height: 20px;
+  border: 2px solid black;
+  border-radius: 5px;
+
+}
+
+
+#vista_dinamica{
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  flex-direction: row;
+  background-color: rgba(0,0,0,0.1);
+
+}
+
+#vista_dinamica img{
+
+  display: flex;
+
+  box-sizing: content-box;
+  width: 40%;
+
+  padding: 10px;
+
+}
+
+#vista_dinamica .album{
+
+  max-width: 400px;  
+  max-height: 400px; 
+  display: flex;
+  border: 2px solid black;
+  border-radius: 5px;
+
+}
+
+
+.album_scarpe {
+  margin: 10px;
+  border: 3px solid rgb(88, 88, 88);
+  border-radius: 10px;
+  padding: 10px;
+  width: 400px;  
+  height: 400px; 
+  display: flex;
+  flex-direction:column;
+
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+  background-color: white; 
+}
+
+.album:hover, .album_scarpe:hover{
+	background-color: #cfe3ff;
+}
+
+#vista .album p, #vista .album_scarpe{
+
+  text-align: center;
+  font-size: 20px;
+  margin: 5px;
+
+}
+
+
+#vista_dinamica .album p, #vista_dinamica .album_scarpe{
+
+    text-align: center;
+    font-size: 20px;
+
+}
+
+#bottone_invio{
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+}
+
+#cerca .submit{
+
+  font-size: 20px;
+  padding: 5px;
+  margin-top: 5px;
+  cursor: pointer;
+
+}
+
+#sezione_ricerca{
+
+  display: flex;
+  justify-content: center;
+
+}
+
+#img_cerca{
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-image: url(https://wallpaperaccess.com/full/1232117.jpg);
+  background-size: cover;
+
+  box-sizing: content-box;
+  width: 100%;
+  height: 400px;
+
+  padding: 20px;
+
+  margin-top: 20px;
+
+}
+
+#cerca{
+
+  display: flex;
+  text-align: center;
+
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  background-color: rgba(255, 255, 255);
+
+  padding: 8px;
+  
+}
+
+#request{
+
+  /*background-color: rgba(119, 136, 153, 0.6);*/
+
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 5px;
+
+}
+
+#modale.hidden {
+	display: none; 
+}
+
+#modale {
+	position: fixed;
+	top: -20;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	
+	background-color: rgba(0, 0, 0, 0.9);
+	z-index: 2;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center; 
+}
+
+#modale img {
+	height: 50%;
+	border: 1px solid black;
+}
+
+.no-scroll {
+	overflow: hidden;
+}
+
+.loading {
+  margin-left: 33%;
+  margin-right: 33%;
+
+  border-radius: 10px;
+
+  animation: 1s anim-lineUp ease-out infinite;
+  font-size: 25px;
+  
+}
+@keyframes anim-lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+header {
+    
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
+header nav {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+#welcome{
+
+  padding-right: 3px;
+  margin-left: 5px;
+  font-size: 20px;
+
+}
+
+main h1, p{
+
+  display:inline;
+
+}
+
+/*------------------------------------------------------Menu a Scomparsa------------------------------------------------------*/
+
+#drop-menu {
+	margin: 0;
+	padding: 0;
+}
+
+ul#menu {
+	padding: 0;
+	float:left;
+	background-color: black;
+	font-size: 14px;
+}
+
+ul#menu li {
+	margin:0;
+	padding:0;
+	float:left;
+	display: block;
+	border-right: 1px solid #222;
+	position: relative;
+}
+
+ul#menu li a {
+	float: left;
+	padding:12px 30px;
+	color: white; /*Colore font*/
+	text-decoration:none; /*No Sottolineatura*/
+}
+
+ul#menu li a:hover { /*Quando c'è sopra la freccia*/
+	background: #666;
+	color:#fff
+}
+
+ul#menu ul {
+	margin:2px 0 0;
+	padding:0;
+	display:inline-block;
+	list-style: none;
+	opacity: 0;
+	position: absolute;
+	top: 38px;
+	left: 0;
+	background: #444;
+}
+
+ul#menu li:hover ul {
+	opacity: 1;
+	visibility: visible;
+}
+
+ul#menu ul li {
+	float: none;
+	display: block;
+	border: 0;
+}
+
+ul#menu ul a {
+	padding:10px;
+	width: 130px;
+	display: block;
+	white-space: nowrap;
+	float: none;
+	text-transform: none;
+}
+
+ul#menu ul a:hover {
+	background-color: #0186ba;
+	color:#fff
+}
+
+/*------------------------------------------------------Menu a Scomparsa------------------------------------------------------*/
+
+
+
+/*------------------------------------------------------Cosa succede se scendiamo sotto i 600px------------------------------------------------------*/
+
+@media (max-width: 600px){
+
+#modale{
+
+    top: 0;
+
+}
+
+#modale img {
+	height: 25%;
+	border: 1px solid black;
+}
+
+}
+
+/*------------------------------------------------------Cosa succede se scendiamo sotto i 600px------------------------------------------------------*/

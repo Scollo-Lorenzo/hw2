@@ -1,0 +1,194 @@
+body{
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.9);
+  font-family: 'Bebas Neue';
+
+
+}
+
+main{
+
+  display: flex;
+  background-image: url(https://hd-wallpaper.wiki/wp-content/uploads/2021/12/sneaker-hd-wallpaper.jpg);
+  background-position: center;
+  border-radius: 5px;
+  height: 75%;
+  width: 100%;
+
+}
+
+
+form{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  background-color: rgba(133, 133, 133, 0.7);
+  border: 6px solid rgba(255, 255, 255);
+
+  border-radius: 20px;
+  width: 40%;
+
+  margin: 25px;
+  overflow: hidden;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+
+} 
+
+main{
+
+  display: flex;
+  justify-content: center;
+  font-size: 125%;
+
+}
+
+label{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+#tastoAccedi_Registrati{
+
+  display: flex;
+  flex-direction: row;
+
+}
+
+
+.erroreInsBox{
+
+  border: 2px solid red;
+  border-radius: 3px;
+
+}
+
+.erroreInsText{
+
+
+  animation: 1s anim-lineUp ease-out;
+  color: red;
+
+
+}
+
+/*------------------------------------------------------CSS x Animazione apparizione messaggi di errore------------------------------------------------------*/
+
+@keyframes anim-lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+/*------------------------------------------------------CSS x Animazione apparizione messaggi di errore------------------------------------------------------*/
+
+#gif img{
+
+  width: 50px;
+  height: 50px;
+
+}
+
+span{
+
+  display: flex;
+  justify-content: center;
+
+}
+
+p{
+
+  margin: 10px;
+
+}
+
+a{
+
+  font-size: 150%;
+  color:rgba(0, 0, 0)
+
+}
+
+input{
+
+  background: #1c1c1c25; /* Colore di sfondo */
+  border: 3px solid #323232; /* Bordo */
+  border-radius: 4px;
+  color: white;
+  height: 30px;
+  padding-left: 10px;
+
+}
+
+#username{
+
+  background: #1C1C1C url(../img/user.png) no-repeat 7px;
+  background-image: url(../img/user.png);
+
+}
+
+#email{
+
+  background: #1C1C1C no-repeat 7px;
+  background-image: url(../img/user.png);
+
+}
+
+#data{
+
+  background: #1C1C1C no-repeat 7px;
+  background-image: url(../img/user.png);
+
+}
+
+#password{
+
+  background: #1C1C1C no-repeat 7px;
+  background-image: url(../img/user.png);
+
+}
+
+/*------------------------------------------------------Cosa succede se scendiamo sotto un certo numero di pixel------------------------------------------------------*/
+
+@media (max-width: 1100px){
+
+  main{
+
+    font-size: 100%;
+  
+  }
+
+}
+
+@media (max-width: 600px){
+
+  form{
+
+    width: 100%;
+
+  }
+
+}
+
+/*------------------------------------------------------Cosa succede se scendiamo sotto un certo numero di pixel------------------------------------------------------*/
